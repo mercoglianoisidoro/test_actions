@@ -8,9 +8,9 @@ runs:
     run: echo "action 1"
     shell: bash
   - name: conf git
-    run:   sh -c 'git config user.email "mercogliano.isidoro@gmail.com" &&  git config user.name "DevOps Robot"'
+    run:   git config user.email "mercogliano.isidoro@gmail.com" &&  git config user.name "DevOps Robot"
     shell: bash
   - name: test commit
-    run: echo "action 1" > test_file.txt && git add test_file.txt && git commit -m 'test commit from actions' && git push
+    run: echo "action 1 - " > test_file.txt && git add test_file.txt && git commit -m 'test commit from actions' && git push
     shell: bash
 
