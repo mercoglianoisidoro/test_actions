@@ -9,8 +9,6 @@ jobs:
     runs-on: ubuntu-18.04
     steps:
       - uses: actions/checkout@v2
-      - run : sudo apt-get install tree && tree .github
-      - run : ls -la
       - name: use action 1
         uses: ./.github/actions/action1/
       - name: use action 2
