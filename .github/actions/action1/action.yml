@@ -7,6 +7,9 @@ runs:
   - name: action 1
     run: echo "action 1"
     shell: bash
+  - name: conf git
+    run:   git config --global isidoro@hublo.com "you@example.com" &&  git config --global user.name "DevOps Robot"
+    shell: bash
   - name: test commit
     run: echo "action 1" > test_file.txt && git add test_file.txt && git commit -m 'test commit from actions' && git push
     shell: bash
