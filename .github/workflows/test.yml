@@ -13,7 +13,6 @@ jobs:
       - run : ls -la
       - name: use action 1
         uses: ./.github/actions/action1/
-
-      - name: use action 1
+      - name: use action 2
         uses: ./.github/actions/action2
 
