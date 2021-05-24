@@ -13,4 +13,6 @@ jobs:
         uses: ./.github/actions/action1/
       - name: use action 2
         uses: ./.github/actions/action2
+      - name: test command
+        run: [[ `curl --write-out %{http_code} --silent --output /dev/null staging-env.playground-hublo.com` == 200 ]] && echo 'test status code - OK'
 
