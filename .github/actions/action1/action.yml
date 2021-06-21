@@ -7,6 +7,15 @@ runs:
   - name: action 1
     run: echo "action 1"
     shell: bash
+  - name: test
+    run: env
+    shell: bash
+  - name: test2
+    run: echo $GITHUB_ENV
+    shell: bash
+        
+    
+    
 
   # - name: conf git
   #   run:   git config user.email "mercogliano.isidoro@gmail.com" &&  git config user.name "DevOps Robot"
