@@ -18,4 +18,7 @@ jobs:
         uses: ./.github/actions/action2
       - name: test command
         run: "[[ `curl --write-out %{http_code} --silent --output /dev/null staging-env.playground-hublo.com` == 200 ]] && echo 'test status code - OK'"
-
+      - name: test
+        run: env
+      - name: test2
+        run: echo $GITHUB_ENV
