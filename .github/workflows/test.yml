@@ -3,8 +3,6 @@ name: test
 on:
   push:
     branches: [ main ]
-  schedule:
-    - cron:  "0 12 * * *"
 
 
 jobs:
@@ -21,4 +19,4 @@ jobs:
       - name: test
         run: env
       - name: test2
-        run: echo $GITHUB_ENV
+        run: echo {{$GITHUB_ENV}}
